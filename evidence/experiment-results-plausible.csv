@@ -1,0 +1,31 @@
+prompt_id,shape,prompt,engine,appeared,linked,note,screenshot,checked_at
+1,best,What's the best privacy-friendly analytics software for a small business?,ChatGPT,yes,yes,Named in the answer and linked to plausible.io.,p01-chatgpt.png,2026-10-21
+1,best,What's the best privacy-friendly analytics software for a small business?,Google AI Overviews,n-a,n-a,AI Overview did not appear for this query.,p01-aio.png,2026-10-21
+1,best,What's the best privacy-friendly analytics software for a small business?,Perplexity,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p01-perplexity.png).,p01-perplexity.png,2026-10-21
+2,best,Best privacy analytics tools for small teams in 2026,ChatGPT,yes,yes,Named in the answer and linked to plausible.io.,p02-chatgpt.png,2026-10-21
+2,best,Best privacy analytics tools for small teams in 2026,Google AI Overviews,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p02-aio.png).,p02-aio.png,2026-10-21
+2,best,Best privacy analytics tools for small teams in 2026,Perplexity,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p02-perplexity.png).,p02-perplexity.png,2026-10-21
+3,best,Which analytics software would you recommend for a small marketing agency?,ChatGPT,no,no,Brand not named in the answer.,p03-chatgpt.png,2026-10-21
+3,best,Which analytics software would you recommend for a small marketing agency?,Google AI Overviews,no,no,Brand not named in the answer.,p03-aio.png,2026-10-21
+3,best,Which analytics software would you recommend for a small marketing agency?,Perplexity,no,no,Brand not named in the answer.,p03-perplexity.png,2026-10-21
+4,alternatives,What are the best alternatives to Google Analytics?,ChatGPT,yes,yes,Named in the answer and linked to plausible.io.,p04-chatgpt.png,2026-10-21
+4,alternatives,What are the best alternatives to Google Analytics?,Google AI Overviews,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p04-aio.png).,p04-aio.png,2026-10-21
+4,alternatives,What are the best alternatives to Google Analytics?,Perplexity,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p04-perplexity.png).,p04-perplexity.png,2026-10-21
+5,alternatives,Google Analytics vs the rest - what else should I look at before I switch?,ChatGPT,yes,yes,Named in the answer and linked to plausible.io.,p05-chatgpt.png,2026-10-21
+5,alternatives,Google Analytics vs the rest - what else should I look at before I switch?,Google AI Overviews,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p05-aio.png).,p05-aio.png,2026-10-21
+5,alternatives,Google Analytics vs the rest - what else should I look at before I switch?,Perplexity,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p05-perplexity.png).,p05-perplexity.png,2026-10-21
+6,alternatives,I don't want to use Google Analytics. What should I use instead?,ChatGPT,yes,yes,Named in the answer and linked to plausible.io.,p06-chatgpt.png,2026-10-21
+6,alternatives,I don't want to use Google Analytics. What should I use instead?,Google AI Overviews,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p06-aio.png).,p06-aio.png,2026-10-21
+6,alternatives,I don't want to use Google Analytics. What should I use instead?,Perplexity,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p06-perplexity.png).,p06-perplexity.png,2026-10-21
+7,evaluation,Is Plausible actually any good?,ChatGPT,yes,yes,Named in the answer and linked to plausible.io.,p07-chatgpt.png,2026-10-21
+7,evaluation,Is Plausible actually any good?,Google AI Overviews,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p07-aio.png).,p07-aio.png,2026-10-21
+7,evaluation,Is Plausible actually any good?,Perplexity,yes,yes,Named in the answer and linked to plausible.io.,p07-perplexity.png,2026-10-21
+8,evaluation,What do people say about Plausible?,ChatGPT,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p08-chatgpt.png).,p08-chatgpt.png,2026-10-21
+8,evaluation,What do people say about Plausible?,Google AI Overviews,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p08-aio.png).,p08-aio.png,2026-10-21
+8,evaluation,What do people say about Plausible?,Perplexity,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p08-perplexity.png).,p08-perplexity.png,2026-10-21
+9,evaluation,Plausible reviews - pros and cons,ChatGPT,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p09-chatgpt.png).,p09-chatgpt.png,2026-10-21
+9,evaluation,Plausible reviews - pros and cons,Google AI Overviews,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p09-aio.png).,p09-aio.png,2026-10-21
+9,evaluation,Plausible reviews - pros and cons,Perplexity,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p09-perplexity.png).,p09-perplexity.png,2026-10-21
+10,evaluation,Should I buy Plausible or Google Analytics?,ChatGPT,yes,yes,Named in the answer and linked to plausible.io.,p10-chatgpt.png,2026-10-21
+10,evaluation,Should I buy Plausible or Google Analytics?,Google AI Overviews,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p10-aio.png).,p10-aio.png,2026-10-21
+10,evaluation,Should I buy Plausible or Google Analytics?,Perplexity,yes,no,Named in the answer; no link to plausible.io in the captured DOM (see screenshot p10-perplexity.png).,p10-perplexity.png,2026-10-21

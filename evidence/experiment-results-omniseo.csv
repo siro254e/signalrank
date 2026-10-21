@@ -1,0 +1,31 @@
+prompt_id,shape,prompt,engine,appeared,linked,note,screenshot,checked_at
+1,best,"What's the best AI visibility software for a small marketing agency?",ChatGPT,no,no,"OmniSEO not named in the answer.",p01-chatgpt-first.png,2026-10-21
+1,best,"What's the best AI visibility software for a small marketing agency?",Perplexity,no,no,"OmniSEO not named in the answer.",p01-perplexity.png,2026-10-21
+1,best,"What's the best AI visibility software for a small marketing agency?",Google AI Overviews,no,no,"OmniSEO not named in the AI Overview.",p01-aio.png,2026-10-21
+2,best,"Best AI visibility software tools for small teams in 2026",ChatGPT,no,no,"OmniSEO not named in the answer.",p02-chatgpt.png,2026-10-21
+2,best,"Best AI visibility software tools for small teams in 2026",Perplexity,no,no,"OmniSEO not named in the answer.",p02-perplexity.png,2026-10-21
+2,best,"Best AI visibility software tools for small teams in 2026",Google AI Overviews,no,no,"OmniSEO not named in the AI Overview.",p02-aio.png,2026-10-21
+3,best,"Which AI visibility software would you recommend for a small marketing agency?",ChatGPT,no,no,"OmniSEO not named in the answer.",p03-chatgpt.png,2026-10-21
+3,best,"Which AI visibility software would you recommend for a small marketing agency?",Perplexity,no,no,"OmniSEO not named in the answer.",p03-perplexity.png,2026-10-21
+3,best,"Which AI visibility software would you recommend for a small marketing agency?",Google AI Overviews,no,no,"OmniSEO not named in the AI Overview.",p03-aio.png,2026-10-21
+4,alternatives,"What are the best alternatives to Semrush?",ChatGPT,no,no,"OmniSEO not named in the answer.",p04-chatgpt.png,2026-10-21
+4,alternatives,"What are the best alternatives to Semrush?",Perplexity,no,no,"OmniSEO not named in the answer.",p04-perplexity.png,2026-10-21
+4,alternatives,"What are the best alternatives to Semrush?",Google AI Overviews,no,no,"OmniSEO not named in the AI Overview.",p04-aio.png,2026-10-21
+5,alternatives,"Semrush vs the rest - what else should I look at before I buy?",ChatGPT,no,no,"OmniSEO not named in the answer.",p05-chatgpt.png,2026-10-21
+5,alternatives,"Semrush vs the rest - what else should I look at before I buy?",Perplexity,no,no,"OmniSEO not named in the answer.",p05-perplexity.png,2026-10-21
+5,alternatives,"Semrush vs the rest - what else should I look at before I buy?",Google AI Overviews,no,no,"OmniSEO not named in the AI Overview.",p05-aio.png,2026-10-21
+6,alternatives,"I don't want to use Semrush. What should I use instead?",ChatGPT,no,no,"OmniSEO not named in the answer.",p06-chatgpt.png,2026-10-21
+6,alternatives,"I don't want to use Semrush. What should I use instead?",Perplexity,no,no,"OmniSEO not named in the answer.",p06-perplexity.png,2026-10-21
+6,alternatives,"I don't want to use Semrush. What should I use instead?",Google AI Overviews,n-a,n-a,"AI Overview did not appear for this query.",p06-aio.png,2026-10-21
+7,evaluation,"Is OmniSEO actually any good?",ChatGPT,yes,yes,"Full review with $89/$349 pricing and a verdict; cites omniseo.com/pricing.",p07-chatgpt.png,2026-10-21
+7,evaluation,"Is OmniSEO actually any good?",Perplexity,yes,no,"Named and reviewed; sources are third-party reviews (Hack'celeration, Omid Saffari), no omniseo.com link.",p07-perplexity.png,2026-10-21
+7,evaluation,"Is OmniSEO actually any good?",Google AI Overviews,yes,no,"Named in the AI Overview; visible source cards are third-party reviews.",p07-aio.png,2026-10-21
+8,evaluation,"What do people say about OmniSEO?",ChatGPT,yes,yes,"Named in the answer; cites omniseo.com/pricing.",p08-chatgpt.png,2026-10-21
+8,evaluation,"What do people say about OmniSEO?",Perplexity,yes,no,"Named in the answer; sources are third-party reviews, no omniseo.com link.",p08-perplexity.png,2026-10-21
+8,evaluation,"What do people say about OmniSEO?",Google AI Overviews,yes,no,"Named in the AI Overview; visible source cards are third-party reviews.",p08-aio.png,2026-10-21
+9,evaluation,"OmniSEO reviews - pros and cons",ChatGPT,yes,yes,"Named and reviewed; cites omniseo.com/pricing.",p09-chatgpt.png,2026-10-21
+9,evaluation,"OmniSEO reviews - pros and cons",Perplexity,yes,no,"Named and reviewed; sources are third-party reviews, no omniseo.com link.",p09-perplexity.png,2026-10-21
+9,evaluation,"OmniSEO reviews - pros and cons",Google AI Overviews,yes,no,"Named and reviewed in the AI Overview; visible source cards are third-party reviews.",p09-aio.png,2026-10-21
+10,evaluation,"Should I buy OmniSEO or Semrush?",ChatGPT,yes,yes,"Compared with Semrush; recommends Semrush for SEO and OmniSEO for AI visibility; cites omniseo.com/pricing.",p10-chatgpt.png,2026-10-21
+10,evaluation,"Should I buy OmniSEO or Semrush?",Perplexity,yes,no,"Compared with Semrush; sources are third-party reviews, no omniseo.com link.",p10-perplexity.png,2026-10-21
+10,evaluation,"Should I buy OmniSEO or Semrush?",Google AI Overviews,yes,no,"Compared with Semrush in the AI Overview; visible source cards are third-party reviews.",p10-aio.png,2026-10-21
