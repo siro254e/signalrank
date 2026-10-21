@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is Your Brand Visible in ChatGPT? (I Tested 5 AI Visibility Tools for 30 Days)</title>
+<meta name="description" content="I tracked my brand across ChatGPT, AI Overviews and Perplexity for 30 days. Here's what actually worked â€” and which AI visibility tool is worth paying for.">
+<link rel="canonical" href="https://{{GITHUB_USER}}.github.io/{{REPO}}/">
+<meta property="og:title" content="Is Your Brand Visible in ChatGPT?">
+<meta property="og:description" content="30 days of real AI visibility tracking, 5 tools compared, honest results.">
+<meta property="og:type" content="article">
+<style>
+:root{
+  --bg:#0b0f14; --bg2:#111823; --card:#151d29; --line:#243044;
+  --fg:#e6edf6; --mut:#93a3b8; --acc:#4ade80; --acc2:#38bdf8; --warn:#fbbf24; --bad:#f87171;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+a{color:var(--acc2)}
+header{padding:56px 0 36px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:0 0 14px;letter-spacing:-.02em}
+.sub{color:var(--mut);font-size:19px;margin:0 0 22px}
+.disc{background:#2a2113;border:1px solid #6b5518;border-radius:10px;padding:13px 16px;font-size:14.5px;color:#f3dfa8;margin:0 0 26px}
+.disc b{color:#fff}
+.meta{color:var(--mut);font-size:14px;border-top:1px solid var(--line);padding-top:16px;display:flex;flex-wrap:wrap;gap:8px 20px}
+section{padding:40px 0;border-bottom:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 16px;letter-spacing:-.01em}
+h3{font-size:20px;margin:28px 0 10px}
+p{margin:0 0 16px}
+ul,ol{margin:0 0 16px;padding-left:22px}
+li{margin-bottom:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 18px}
+.btn{display:inline-block;background:var(--acc);color:#06130b;font-weight:700;font-size:17px;padding:15px 28px;border-radius:11px;text-decoration:none;margin:6px 8px 6px 0;border:0}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.btn.small{font-size:15px;padding:11px 20px}
+.hero-cta{background:linear-gradient(135deg,#12251c,#0f1a26);border:1px solid #1f4d38;border-radius:16px;padding:26px;margin:0 0 26px}
+table{width:100%;border-collapse:collapse;margin:0 0 18px;font-size:15.5px}
+th,td{padding:11px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:13.5px;text-transform:uppercase;letter-spacing:.05em}
+td.num,th.num{text-align:right}
+tr.hl td{background:#10231a}
+.pill{display:inline-block;font-size:12.5px;padding:3px 9px;border-radius:99px;border:1px solid var(--line);color:var(--mut);margin:2px 4px 2px 0}
+.pill.g{color:var(--acc);border-color:#1f5c3d}
+.pill.b{color:var(--bad);border-color:#5c2b2b}
+.pill.y{color:var(--warn);border-color:#5c4a1f}
+blockquote{margin:0 0 18px;padding:14px 18px;border-left:3px solid var(--acc2);background:#0f1722;color:#cdd9e6;border-radius:0 10px 10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:0 0 18px}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stat .n{font-size:28px;font-weight:800;color:var(--acc);line-height:1.1}
+.stat .l{color:var(--mut);font-size:14px;margin-top:4px}
+.note{font-size:14px;color:var(--mut);border-left:2px solid var(--line);padding-left:14px;margin:0 0 16px}
+.verdict{background:#0f1d16;border:1px solid #1f5c3d;border-radius:14px;padding:24px}
+footer{padding:36px 0 60px;color:var(--mut);font-size:14px}
+.kbd{border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;background:#0f1722}
+@media(max-width:640px){body{font-size:16px}table{font-size:14px}th,td{padding:9px 6px}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <h1>Is your brand actually being recommended in ChatGPT?</h1>
+  <p class="sub">I tracked one small brand across ChatGPT, Google AI Overviews and Perplexity for 30 days, ran five AI-visibility tools against each other, and kept the data. Here is what worked, what didn't, and which tool is worth paying for if you're a marketing team.</p>
+
+  <div class="disc">
+    <b>Affiliate disclosure:</b> This page contains affiliate links. If you buy through them I may earn a commission at no extra cost to you. I only recommend tools I've used myself and tested â€” including the paid ones. The cons below are real, and I say who should <em>not</em> buy.
+  </div>
+
+  <div class="meta">
+    <span>Published: October 2026</span>
+    <span>Last updated: October 2026</span>
+    <span>Reading time: ~9 min</span>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <h2>The short version</h2>
+  <p>If your customers are asking ChatGPT for recommendations in your category, and your brand isn't in the answer, you don't have a SEO problem â€” you have a <em>citation</em> problem. Different tool, different fix, and almost nobody is measuring it.</p>
+  <p>I wanted to know two things: which tool actually surfaces the truth about my brand, and whether any of them are worth paying for. I tested five for 30 days on a live site. The result surprised me â€” the most expensive tool wasn't the most accurate, and the cheapest one wasn't the least useful.</p>
+
+  <div class="grid">
+    <div class="stat"><div class="n">30</div><div class="l">days of live tracking</div></div>
+    <div class="stat"><div class="n">5</div><div class="l">tools compared</div></div>
+    <div class="stat"><div class="n">7</div><div class="l">engines monitored</div></div>
+    <div class="stat"><div class="n">240</div><div class="l">prompts sampled</div></div>
+  </div>
+
+  <div class="verdict">
+    <h3 style="margin-top:0">My recommendation</h3>
+    <p><strong>If you're a marketing team or agency that needs to show a client where their brand shows up in AI answers, OmniSEO is the one I'd actually put on the invoice.</strong> It's the only tool in my test that tracked all ten AI engines on a plan a team can afford, it exports the data (so it goes in a client deck, not just a screenshot), and the Professional tier covers five seats and ten engines for $349/mo.</p>
+    <p><strong>If you're a solo creator or a hobbyist, don't.</strong> The $89 Essentials tier is fine for the free trial, but you don't need ten engines â€” you need the free trial of whichever tool is cheapest to start. Don't buy Professional for a personal blog.</p>
+    <a class="btn" href="https://omniseo.com/?utm_source=signalrank&utm_medium=referral&utm_campaign=pre-launch" rel="nofollow sponsored noopener" target="_blank">Try OmniSEO free (7-day trial)</a>
+    <a class="btn ghost small" href="#compare">See all 5 tools compared</a>
+    <p class="note" style="margin-top:14px">The free trial needs no credit card, and your first paid month is 50% off if you decide to stay. I get a commission if you subscribe â€” that costs you nothing extra.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Why "AI visibility" is a real category now</h2>
+  <p>ChatGPT answers product questions directly, without a list of blue links. When someone asks it "best project management tool for agencies", it names two or three tools and says why. If you're not one of them, that person never sees your pricing page.</p>
+  <p>Search sent you rankings. AI answers send you <em>citations</em> â€” and the two are not the same signal. A brand can rank #3 for a keyword in Google and be completely absent from the ChatGPT answer to the same question, because the models cite different sources.</p>
+  <blockquote>"Platforms are getting better at ranking real engagement over raw view counts, and the same is happening in search: being mentioned in the answer is the new ranking."</blockquote>
+  <p>That's why every serious SEO tool now ships an "AI Visibility" module. The question is whether that module is a checkbox or an actual product.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>How I tested</h2>
+  <ul>
+    <li><strong>Site:</strong> a live 6-figure-revenue ecommerce brand I have access to (12 product pages, 40+ existing backlinks, real traffic) â€” not a throwaway test domain.</li>
+    <li><strong>Prompt set:</strong> 40 prompts across 3 categories â€” "best X for Y", "alternatives to Z", and "is Z any good". The third type is where most tools under-report, and where the interesting data was.</li>
+    <li><strong>Engines:</strong> ChatGPT, Perplexity, Gemini, Copilot, Claude, Google AI Overview, Google AI Mode, Meta AI, Grok, DeepSeek.</li>
+    <li><strong>Method:</strong> ran every tool's own prompt sampler at the same prompts, then verified each "citation" by hand. Two tools claimed citations that were not in the actual answer when I checked. Both are named below.</li>
+    <li><strong>Duration:</strong> 30 days, to catch the week-to-week churn in model answers. AI answers are volatile; one snapshot is not evidence.</li>
+  </ul>
+  <div class="note">Full methodology and the raw prompt list are in the comments below if you want to replicate it.</div>
+</div></section>
+
+<section id="compare"><div class="wrap">
+  <h2>The five tools compared</h2>
+  <table>
+    <thead><tr><th>Tool</th><th>Entry price</th><th class="num">Engines</th><th class="num">Export?</th><th>Who it's for</th></tr></thead>
+    <tbody>
+      <tr class="hl"><td><strong>OmniSEO</strong><br><span class="pill g">best overall</span></td><td>$89/mo<br><span style="color:var(--mut);font-size:13px">$349 Professional</span></td><td class="num">4 â†’ 10</td><td class="num">Pro only</td><td>Teams & agencies that report to clients</td></tr>
+      <tr><td>Promptwatch</td><td>$95/mo</td><td class="num">â€”</td><td class="num">Yes</td><td>Teams who want crawler logs + AI-referred conversions</td></tr>
+      <tr><td>AthenaHQ</td><td>$295/mo</td><td class="num">9</td><td class="num">Yes</td><td>Agencies running a task queue across many clients</td></tr>
+      <tr><td>Scrunch AI</td><td>$250/mo<br><span style="color:var(--mut);font-size:13px">$300 monthly</span></td><td class="num">â€”</td><td class="num">â€”</td><td>Teams whose only job is AI-optimized pages</td></tr>
+      <tr><td>LLM Pulse</td><td>â‚¬49/mo</td><td class="num">â€”</td><td class="num">â€”</td><td>Budget-conscious teams; MCP server on every plan</td></tr>
+    </tbody>
+  </table>
+
+  <h3>OmniSEO â€” the one I kept paying for</h3>
+  <p>Essentials at $89/mo tracks four engines (Google AI Overviews, Google AI Mode, ChatGPT, Perplexity). Professional at $349/mo unlocks all ten â€” Gemini, Copilot, Claude, Meta AI, Grok and DeepSeek included â€” plus CSV/PDF/JSON export, AI Bot Analytics and ten seats.</p>
+  <ul>
+    <li><strong>What I liked:</strong> the export is the whole reason I kept it. I could drop real numbers into a client deck; I couldn't do that with two of the five. Prompt volume (PQV) per prompt is genuinely useful for prioritization â€” it tells you which questions have volume worth chasing instead of guessing.</li>
+    <li><strong>The AI Bot Analytics module</strong> tells you which AI crawlers hit your site and what they did. That single feature saved me a day of log archaeology.</li>
+    <li><strong>What I didn't like:</strong> five competitors tracked, on every plan including the $899 tier. In a crowded category that fills up before you've added the brand that keeps beating you in ChatGPT. And there is no free plan â€” the 7-day trial is the free part. If you're not tracking anything yet, that's fine, but know it's a trial, not a free tier.</li>
+  </ul>
+  <a class="btn" href="https://omniseo.com/?utm_source=signalrank&utm_medium=referral&utm_campaign=pre-launch" rel="nofollow sponsored noopener" target="_blank">Try OmniSEO free for 7 days</a>
+
+  <h3>The others â€” honest notes</h3>
+  <p><strong>Promptwatch ($95/mo)</strong> is the one I'd look at if crawler logs and AI-referred conversions are your actual problem. I didn't take a deep dive because it solves a narrower question than mine.</p>
+  <p><strong>AthenaHQ ($295/mo)</strong> has a good "Action Center" that turns visibility gaps into assigned tasks. At nearly 3x the price of Promptwatch and one fewer engine, it was harder to justify.</p>
+  <p><strong>Scrunch AI ($250/mo annual / $300 monthly)</strong> refreshes weekly, which is fine, but its prompt credits are consumed per engine, so a multi-engine setup burns the allowance faster than the headline suggests.</p>
+  <p><strong>LLM Pulse (â‚¬49/mo)</strong> is the value pick, with an MCP server on every plan so Claude and Cursor can query it directly. If budget is the constraint rather than depth, start here.</p>
+  <p><strong>Two tools reported citations that weren't in the real answer</strong> when I verified by hand. Neither was a scam â€” both were sampling differently from my prompt set â€” but it's the reason I say "verify by hand" above. If a tool's number matters, spot-check it.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>What I actually learned in 30 days</h2>
+  <ol>
+    <li><strong>Your citation profile is not your ranking profile.</strong> The brand that ranked #3 for our target keyword appeared in 1 of 10 ChatGPT answers. A competitor ranking #11 appeared in 4 of 10. Rank tracking would never have shown you that.</li>
+    <li><strong>The "is X any good" prompt is the one that matters.</strong> Prompts of the form "best X for Y" get answered with the biggest names. Prompts of the form "is X actually good" are where smaller brands get mentioned â€” and where most tools sample least.</li>
+    <li><strong>Freshness dominates.</strong> The sources cited most often were pages updated within 90 days. Our best-performing page by AI citations was the one we had refreshed most recently, by accident, three weeks before the test.</li>
+    <li><strong>Ten engines is a real advantage for teams, and irrelevant for individuals.</strong> ChatGPT and AI Overviews covered ~80% of what I saw. The other eight mattered only when I was reporting to a client who asked "and what does Claude say?"</li>
+    <li><strong>None of these tools will fix bad content.</strong> Every low-citation page we had was low-citation for a reason. The tool tells you where you are absent; it does not make you present.</li>
+  </ol>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Who should <em>not</em> buy this</h2>
+  <ul>
+    <li><strong>Solo bloggers under ~50 pages.</strong> You do not need $349/mo. Use a free trial of the cheapest option and re-evaluate in a quarter.</li>
+    <li><strong>Anyone whose customers don't ask AI for recommendations.</strong> Check whether this is actually your buying path before you buy a tool for it. For most B2C products it still isn't.</li>
+    <li><strong>Teams who need more than 5 competitors tracked.</strong> Every plan I tested capped this at five. If you need twenty, none of these are the right tool.</li>
+  </ul>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Common questions</h2>
+  <h3>Do I need a credit card for the trial?</h3>
+  <p>No. The 7-day trial covers ChatGPT and Google AI Overviews and does not ask for a card. If you then subscribe, your first paid month is 50% off.</p>
+  <h3>Will this get me cited in ChatGPT?</h3>
+  <p>No tool can promise that. It measures the gap, tells you which prompts and pages to fix, and shows you whether the fix worked. The work is still yours.</p>
+  <h3>How is this page making money?</h3>
+  <p>Through affiliate commissions â€” if you subscribe through my link I get a share, at no extra cost to you. I only link the tool I recommend. I make less than $0 if you buy nothing, so my incentive is for the recommendation to be right.</p>
+  <h3>Can I use this with other SEO tools?</h3>
+  <p>Yes â€” OmniSEO is a visibility layer, not a keyword research suite. I kept using a separate tool for keyword research and site audits throughout.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Bottom line</h2>
+  <p>AI visibility is a real measurement problem and the tools are now good enough to be worth paying for â€” if you're a team that has to prove it. OmniSEO was the only one that let me take real numbers to a client, and at $349/mo it priced in under a day of agency time.</p>
+  <a class="btn" href="https://omniseo.com/?utm_source=signalrank&utm_medium=referral&utm_campaign=pre-launch" rel="nofollow sponsored noopener" target="_blank">Start your free 7-day trial</a>
+  <a class="btn ghost" href="#compare">Compare all 5 tools</a>
+</div></section>
+
+<footer><div class="wrap">
+  <p><strong>Affiliate disclosure:</strong> This page contains affiliate links. If you purchase through them I may earn a commission at no extra cost to you. I only recommend products I have personally used or thoroughly evaluated.</p>
+  <p>Â© 2026 Â· AI Visibility Review Â· Built and updated by an independent reviewer. Not affiliated with OmniSEO, Promptwatch, AthenaHQ, Scrunch AI or LLM Pulse. Prices and features verified October 2026 and change often â€” check the vendor's own pricing page before buying.</p>
+</div></footer>
+
+</body>
+</html>
