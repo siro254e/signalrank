@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Track ChatGPT Mentions (5 Methods, 3 That Don't Work)</title>
+<meta name="description" content="Five ways to track whether ChatGPT mentions your brand. Three don't answer the AI question. Includes a free 10-prompt test and how to score the answers.">
+<link rel="canonical" href="https://siro254e.github.io/signalrank/track-chatgpt-mentions.html">
+<meta property="og:title" content="How to Track ChatGPT Mentions (5 Methods, 3 That Don't Work)">
+<meta property="og:description" content="Google Alerts, rank trackers and social listening don't tell you what ChatGPT says. Here are the two methods that do, plus the 10 prompts to start with.">
+<meta property="og:type" content="article">
+<style>
+:root{
+  --bg:#0b0f14; --bg2:#111823; --card:#151d29; --line:#243044;
+  --fg:#e6edf6; --mut:#93a3b8; --acc:#4ade80; --acc2:#38bdf8; --warn:#fbbf24; --bad:#f87171;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+a{color:var(--acc2)}
+header{padding:52px 0 34px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:0 0 14px;letter-spacing:-.02em}
+.sub{color:var(--mut);font-size:19px;margin:0 0 22px}
+.disc{background:#2a2113;border:1px solid #6b5518;border-radius:10px;padding:13px 16px;font-size:14.5px;color:#f3dfa8;margin:0 0 26px}
+.disc b{color:#fff}
+.meta{color:var(--mut);font-size:14px;border-top:1px solid var(--line);padding-top:16px;display:flex;flex-wrap:wrap;gap:8px 20px}
+section{padding:38px 0;border-bottom:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 16px;letter-spacing:-.01em}
+h3{font-size:20px;margin:28px 0 10px}
+p{margin:0 0 16px}
+ul,ol{margin:0 0 16px;padding-left:22px}
+li{margin-bottom:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 18px}
+.btn{display:inline-block;background:var(--acc);color:#06130b;font-weight:700;font-size:17px;padding:15px 28px;border-radius:11px;text-decoration:none;margin:6px 8px 6px 0;border:0}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.btn.small{font-size:15px;padding:11px 20px}
+table{width:100%;border-collapse:collapse;margin:0 0 18px;font-size:15.5px}
+th,td{padding:11px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:13.5px;text-transform:uppercase;letter-spacing:.05em}
+td.num,th.num{text-align:right}
+tr.hl td{background:#10231a}
+.pill{display:inline-block;font-size:12.5px;padding:3px 9px;border-radius:99px;border:1px solid var(--line);color:var(--mut);margin:2px 4px 2px 0}
+.pill.g{color:var(--acc);border-color:#1f5c3d}
+.pill.b{color:var(--bad);border-color:#5c2b2b}
+.pill.y{color:var(--warn);border-color:#5c4a1f}
+blockquote{margin:0 0 18px;padding:14px 18px;border-left:3px solid var(--acc2);background:#0f1722;color:#cdd9e6;border-radius:0 10px 10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:0 0 18px}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stat .n{font-size:28px;font-weight:800;color:var(--acc);line-height:1.1}
+.stat .l{color:var(--mut);font-size:14px;margin-top:4px}
+.note{font-size:14px;color:var(--mut);border-left:2px solid var(--line);padding-left:14px;margin:0 0 16px}
+.verdict{background:#0f1d16;border:1px solid #1f5c3d;border-radius:14px;padding:24px}
+footer{padding:36px 0 60px;color:var(--mut);font-size:14px}
+nav.top{padding:18px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+nav.top a{margin-right:18px}
+@media(max-width:640px){body{font-size:16px}table{font-size:14px}th,td{padding:9px 6px}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQFRVJ4CT4"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-WQFRVJ4CT4');
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How to Track ChatGPT Mentions (5 Methods, 3 That Don't Work)","description":"Five ways to track whether ChatGPT mentions your brand, the three that do not answer the AI question, and a free 10-prompt test.","datePublished":"2026-10-24","dateModified":"2026-10-24","author":{"@type":"Organization","name":"SignalRank"},"publisher":{"@type":"Organization","name":"SignalRank"},"mainEntityOfPage":"https://siro254e.github.io/signalrank/track-chatgpt-mentions.html"}
+</script>
+</head>
+<body>
+
+<nav class="top"><div class="wrap">
+<a href="./">All five tools compared</a>
+<a href="./review.html">OmniSEO review</a>
+<a href="./evidence.html">The 30-answer test</a>
+</div></nav>
+
+<header><div class="wrap">
+<h1>How to track ChatGPT mentions: 5 methods, 3 that don't work</h1>
+<p class="sub">If a buyer asks ChatGPT for a recommendation and your brand is not in the answer, no rank tracker will tell you. Here are the five methods people use, the three that answer a different question, and a free test you can run today.</p>
+<p class="disc"><b>Affiliate disclosure:</b> this page contains affiliate links. SignalRank is an <strong>OmniSEO partner</strong> and earns 50% of what a referred customer pays in their first 12 months, at no extra cost to you. The method below is free; the tool comparison is separate, and no vendor paid for it.</p>
+<p class="meta"><span>Published: 24 October 2026</span><span>Reading time: ~8 min</span><span>No tool required to start</span></p>
+</div></header>
+
+<section><div class="wrap">
+<h2>The short answer</h2>
+<p>There are five common ways to track whether ChatGPT mentions your brand. Three of them do not actually answer the question:</p>
+<table>
+<thead><tr><th>Method</th><th>What it measures</th><th>Tracks AI answers?</th><th>Cost</th></tr></thead>
+<tbody>
+<tr><td><strong>Google Alerts</strong></td><td>Web pages, news and blog mentions</td><td><span class="pill b">No</span></td><td>Free</td></tr>
+<tr><td><strong>Rank trackers</strong></td><td>Google and Bing positions</td><td><span class="pill b">No</span></td><td>Free to paid</td></tr>
+<tr><td><strong>Social listening</strong></td><td>Public posts and comments</td><td><span class="pill b">No</span></td><td>Free to paid</td></tr>
+<tr class="hl"><td><strong>Manual prompt checks</strong></td><td>What the engines answer to your prompts</td><td><span class="pill g">Yes</span></td><td>Free, but time</td></tr>
+<tr class="hl"><td><strong>AI visibility tool</strong></td><td>Prompts, answers, competitors, history</td><td><span class="pill g">Yes</span></td><td>Usually paid</td></tr>
+</tbody>
+</table>
+<div class="verdict">
+<p style="margin-bottom:0"><strong>The split matters because the first three are not useless — they are just answering a different question.</strong> Google Alerts tells you who wrote about you. A rank tracker tells you where a page ranks. Social listening tells you what people posted. None of them tells you what ChatGPT said when a buyer asked for a shortlist. That is the gap this page is about.</p>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>1. Google Alerts — web mentions, not AI answers</h2>
+<p>Google Alerts is free and still useful. Set alerts for your brand name, your product names, your founder, and a few competitor names. You will find reviews, news, directory listings and pages that mention you.</p>
+<p>What it will not do is run a prompt through ChatGPT and record the answer. An alert fires when Google indexes a page containing your term. It does not know which prompts a buyer typed, which brands the model named, or whether your site was linked in the answer.</p>
+<p><strong>Use it for:</strong> reputation monitoring, link opportunities and finding pages that quote you.<br><strong>Do not use it for:</strong> a count of how often ChatGPT recommends you.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>2. Rank trackers — Google positions, not ChatGPT answers</h2>
+<p>A rank tracker follows a keyword and records where a URL appears in a search engine. That is a different pipeline from a language model answering a question. A page can rank first in Google and still be absent from the ChatGPT answer to the same buyer question, because the model is not reading the search results page and returning a list of links. It is generating an answer from what it has learned and what it can retrieve.</p>
+<p>Some SEO platforms now add an “AI visibility” module. That can be useful, but check what it actually does: does it run prompts across ChatGPT, Perplexity and Google AI Overviews, or does it only flag when an AI Overview appears for a keyword? The label is not the capability. If the product cannot show you the prompt, the answer and the brands named, it is not tracking the thing this page is about.</p>
+<p><strong>Use it for:</strong> the search side of the funnel.<br><strong>Do not use it for:</strong> the AI answer side unless the vendor explicitly tests prompts.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>3. Social listening — posts, not model output</h2>
+<p>Social listening tools collect public posts, comments and reviews that mention a term. They are good at catching sentiment, complaints and viral posts. They do not see the answer a model gives to a private prompt, and most of those answers are never posted anywhere.</p>
+<p>There is a tempting shortcut here: search social media for “I asked ChatGPT about [category]” screenshots. That is anecdotal. It can show you that the category is being asked about, but it cannot tell you the base rate, which prompts matter, or whether your brand appears when a buyer asks a different way.</p>
+<p><strong>Use it for:</strong> sentiment and social proof.<br><strong>Do not use it for:</strong> a mention rate.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>4. Manual prompt checks — works, slow, free</h2>
+<p>This is the method anyone can start with today. You write down the questions a buyer would actually ask, run them across the engines that matter, and record what comes back. It is not a dashboard, but it is real evidence.</p>
+<ol>
+<li><strong>Write 10 prompts.</strong> Mix discovery, comparison and evaluation questions. Do not only ask “best [category]” — that tends to return the biggest brands. Ask “is [your brand] good for [use case]” and “[competitor] alternatives” too.</li>
+<li><strong>Pick three engines.</strong> ChatGPT, Perplexity and Google AI Overviews are the common starting set. If your buyers use Gemini or Copilot, add them later.</li>
+<li><strong>Run each prompt in a fresh chat, logged out where possible.</strong> Record the date, engine, prompt and the exact answer. Screenshot it; answers change.</li>
+<li><strong>Score three things:</strong> was your brand named, was your site linked, and which competitors were named. A simple spreadsheet is enough.</li>
+<li><strong>Repeat monthly.</strong> One run is a snapshot, not a trend. Models change, prompts change, and your content changes.</li>
+</ol>
+<p><strong>The honest limits:</strong> answers vary by account, location, model version and time. A logged-in account may see different results from a logged-out one. Manual checks are a sample, not a census. They are still better than guessing, and they are the only free way to see the actual answer.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>The 10-prompt starter set</h2>
+<p>Replace the brackets with your category, use case and brand. Keep the wording natural — the way a buyer would type it, not the way a keyword tool would list it.</p>
+<div class="card">
+<ol style="margin-bottom:0">
+<li>What is the best [category] for [use case]?</li>
+<li>Which [category] should I use for a [team size] team?</li>
+<li>What are the top [category] tools in 2026?</li>
+<li>[Your brand] vs [competitor] — which is better for [use case]?</li>
+<li>Is [your brand] good for [specific problem]?</li>
+<li>What are the best alternatives to [competitor]?</li>
+<li>Recommend a [category] for [industry].</li>
+<li>What is the best [category] for a budget of [amount]?</li>
+<li>Which [category] is best for [specific workflow]?</li>
+<li>Who are the leaders in [category] right now?</li>
+</ol>
+</div>
+<p>Run all ten across three engines and you have 30 answers. That is enough to see a pattern without pretending it is a statistically rigorous study. If your brand appears in zero of the unbranded prompts, that is the finding. If it appears in the branded ones but not the unbranded ones, that is a different finding: the model knows you when prompted, but does not bring you up on its own.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>How to score the answers</h2>
+<table>
+<thead><tr><th>Column</th><th>What to record</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Prompt</td><td>The exact wording</td><td>Small wording changes produce different shortlists.</td></tr>
+<tr><td>Engine</td><td>ChatGPT, Perplexity, Google AI Overviews, etc.</td><td>Engines do not return the same names.</td></tr>
+<tr><td>Named?</td><td>Yes / no</td><td>The base question: are you in the answer at all?</td></tr>
+<tr><td>Linked?</td><td>Yes / no, and the URL</td><td>Being named is not the same as getting the click.</td></tr>
+<tr><td>Competitors named</td><td>Comma-separated</td><td>Shows who owns the answer you are missing.</td></tr>
+<tr><td>Date</td><td>YYYY-MM-DD</td><td>Answers change; a score without a date is not evidence.</td></tr>
+</tbody>
+</table>
+<p>Do not collapse this into one “visibility score” too early. The useful decisions come from the split: named but not linked, linked but only for branded prompts, or absent everywhere. Each one points to a different fix.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>5. AI visibility tools — when the manual test stops scaling</h2>
+<p>A dedicated AI visibility tool automates the manual loop: it stores prompts, runs them across multiple engines on a schedule, records whether your brand and competitors were named, and keeps history. That is genuinely useful if you track many prompts, several brands or client accounts, or need to show change over time.</p>
+<p>It is not magic. The tool measures the answer; it does not write the content that makes you worth citing. It also introduces plan limits that matter more than the headline price: how many engines are covered, how many prompts you can save, how many competitors you can track, how often prompts are re-run, and whether you can export the data.</p>
+<p>Before paying, run the free manual test. If your brand is absent from the unbranded prompts, a dashboard will confirm the absence, not fix it. If you already know the gap and need recurring measurement, compare the plans on those limits — not on the engine count alone.</p>
+<p><a class="btn ghost small" href="./review.html">Read the OmniSEO plan review &rarr;</a> <a class="btn ghost small" href="./">Compare all five tools &rarr;</a></p>
+</div></section>
+
+<section><div class="wrap">
+<h2>What the result actually means</h2>
+<ul>
+<li><strong>Absent from unbranded prompts:</strong> the model does not associate you with the category. The work is content, citations and third-party proof — not a better dashboard.</li>
+<li><strong>Named but not linked:</strong> the model knows you but sends the click elsewhere, often to review sites. Check which sources it cites; that is where the next piece of work is.</li>
+<li><strong>Named only when your brand is in the prompt:</strong> you have brand recognition but not category retrieval. The unbranded prompts are the gap.</li>
+<li><strong>Named consistently:</strong> keep measuring. The answer can change when models update or competitors publish.</li>
+</ul>
+<p>This is also why “AI visibility” is not a replacement for SEO. A rank tracker tells you where a page sits in a search engine. This tells you whether a model names you in an answer. They are different questions, and most teams need both.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>FAQ</h2>
+<h3>Can Google Alerts track ChatGPT mentions?</h3>
+<p>No. Google Alerts tracks pages that Google indexes. It does not run prompts or record model answers. It can tell you that someone wrote about you; it cannot tell you that ChatGPT recommended you.</p>
+<h3>Do rank trackers track ChatGPT?</h3>
+<p>Most rank trackers track search-engine positions, not ChatGPT answers. Some platforms now add AI visibility features; check whether they actually run prompts across the engines you care about. If they only flag AI Overviews for a keyword, that is a different measurement.</p>
+<h3>Is there a free way to track ChatGPT mentions?</h3>
+<p>Yes. Use the 10-prompt set on this page, run it across three engines in fresh chats, and record named/linked/competitors in a spreadsheet. It takes about an hour for the first run. Repeat monthly.</p>
+<h3>How often should I check?</h3>
+<p>Monthly is enough for most teams. Check more often if you are running a specific content campaign, launching a product, or watching a competitor change. One run is a snapshot; a monthly series is a trend.</p>
+<h3>Why did the answer change between two runs?</h3>
+<p>Models are updated, retrieval sources change, and the same prompt can produce different wording on different days or accounts. That is normal. Record the date and engine, and look for patterns across prompts rather than treating one answer as permanent.</p>
+<h3>Do I need a paid tool to start?</h3>
+<p>No. Start with the manual test. Buy a tool when you need recurring runs, multiple engines, competitor tracking, history or client reporting — and compare the plan limits before you pay.</p>
+</div></section>
+
+<section><div class="wrap">
+<div class="card">
+<h2 style="margin-top:0">Run the free test first</h2>
+<p>The 10 prompts above are enough to see whether this is a real problem for your brand. If you want the exact method and the raw results from a 30-answer run across ChatGPT, Perplexity and Google AI Overviews, it is published with the screenshots and the scoring sheet.</p>
+<p style="margin-bottom:0"><a class="btn ghost small" href="./evidence.html">See the 30-answer test &rarr;</a> <a class="btn" href="https://get.omniseo.com/mcomk5teh3xi?utm_source=site&amp;utm_medium=referral&amp;utm_campaign=ai-visibility-2026&amp;utm_content=guide-track-mentions" rel="nofollow sponsored noopener" target="_blank">Try OmniSEO free for 7 days</a></p>
+<p class="note" style="margin-top:14px">The trial needs no card and covers ChatGPT and Google AI Overviews only. The comparison and the limits are on the <a href="./review.html">OmniSEO review page</a>.</p>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+<p><strong>Affiliate disclosure:</strong> this page contains affiliate links. SignalRank is an <strong>OmniSEO partner</strong> and earns 50% of what a referred customer pays in their first 12 months, at no extra cost to you. The free method is documented first; the paid tool is an optional next step.</p>
+<p>&copy; 2026 &middot; SignalRank &middot; <a href="./">Comparison</a> &middot; <a href="./review.html">Review</a> &middot; <a href="./evidence.html">Evidence</a></p>
+</div></footer>
+
+</body>
+</html>
