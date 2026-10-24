@@ -219,20 +219,24 @@ gtag('config', 'G-WQFRVJ4CT4');
     try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* private mode */ }
   }
 
+  function article(word) {
+    return /^[aeiou]/i.test(word) ? "an" : "a";
+  }
+
   function makePrompts(brand, category, audience, competitor) {
     var a = audience || "a buyer";
     var x = competitor || "the market leader";
     return [
       "What is the best " + category + " for " + a + "?",
       "Which " + category + " should I use for " + a + "?",
-      "What are the top " + category + " tools in 2026?",
+      "What are the top " + category + " options in 2026?",
       brand + " vs " + x + " — which is better for " + a + "?",
       "Is " + brand + " good for " + a + "?",
       "What are the best alternatives to " + x + "?",
-      "Recommend a " + category + " for " + a + ".",
+      "Recommend " + article(category) + " " + category + " for " + a + ".",
       "What is the best " + category + " for a small team?",
       "Which " + category + " is best for " + a + "?",
-      "Who are the leaders in " + category + " right now?"
+      "Who are the leaders in the " + category + " category right now?"
     ];
   }
 
