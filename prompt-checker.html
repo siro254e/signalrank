@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatGPT Mention Checker — Free 10-Prompt Test | SignalRank</title>
+<meta name="description" content="Build a free 10-prompt ChatGPT mention test for your brand. Copy the prompts, record named/linked answers, and export the scorecard. No signup or API key.">
+<link rel="canonical" href="https://siro254e.github.io/signalrank/prompt-checker.html">
+<link rel="icon" href="data:,">
+<meta property="og:title" content="ChatGPT Mention Checker — Free 10-Prompt Test">
+<meta property="og:description" content="Generate 10 buyer-intent prompts, run them across ChatGPT, Perplexity and Google AI Overviews, and keep the evidence in one sheet.">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --bg:#0b0f14; --bg2:#111823; --card:#151d29; --line:#243044;
+  --fg:#e6edf6; --mut:#93a3b8; --acc:#4ade80; --acc2:#38bdf8; --warn:#fbbf24; --bad:#f87171;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+a{color:var(--acc2)}
+nav.top{padding:18px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+nav.top a{margin-right:18px}
+header{padding:46px 0 30px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.12;margin:0 0 14px;letter-spacing:-.02em}
+.sub{color:var(--mut);font-size:19px;margin:0 0 20px;max-width:760px}
+.disc{background:#2a2113;border:1px solid #6b5518;border-radius:10px;padding:13px 16px;font-size:14.5px;color:#f3dfa8;margin:0}
+.disc b{color:#fff}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 14px;letter-spacing:-.01em}
+h3{font-size:19px;margin:22px 0 8px}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:7px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 18px}
+label{display:block;font-size:14px;color:var(--mut);margin:0 0 6px}
+input,select,textarea{width:100%;background:#0d141d;border:1px solid var(--line);color:var(--fg);border-radius:9px;padding:12px 13px;font:inherit;font-size:16px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--acc2);outline-offset:1px;border-color:transparent}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid3{display:grid;grid-template-columns:1.2fr .8fr .8fr .8fr .9fr;gap:8px}
+.btn{display:inline-block;background:var(--acc);color:#06130b;font-weight:700;font-size:16px;padding:13px 24px;border-radius:10px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{filter:brightness(1.08)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.btn.small{font-size:14px;padding:9px 14px}
+.btn.copy{background:#223247;color:var(--fg);border:1px solid var(--line);font-weight:600}
+.err{color:var(--bad);font-size:14px;margin:10px 0 0;display:none}
+.note{font-size:14px;color:var(--mut);border-left:2px solid var(--line);padding-left:13px;margin:0 0 14px}
+.hidden{display:none}
+.prompt{display:flex;gap:12px;align-items:flex-start;background:var(--bg2);border:1px solid var(--line);border-radius:11px;padding:13px 14px;margin:0 0 9px}
+.prompt .n{color:var(--acc);font-weight:800;min-width:22px;font-variant-numeric:tabular-nums}
+.prompt .t{flex:1;line-height:1.45;padding-top:1px}
+.prompt .btn{flex:none}
+.summary{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin:0 0 12px;color:var(--mut);font-size:14.5px}
+.summary strong{color:var(--fg)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:11px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:680px}
+th,td{padding:10px 9px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em;background:#101823;position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+td.pnum{color:var(--acc);font-weight:700}
+td.ptext{min-width:190px}
+td select,td input{padding:7px 8px;font-size:13.5px;border-radius:7px}
+td input{min-width:130px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
+.statrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:0 0 16px}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:11px;padding:14px}
+.stat .n{font-size:26px;font-weight:800;color:var(--acc);line-height:1.1}
+.stat .l{font-size:13px;color:var(--mut);margin-top:3px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0 0 14px}
+.steps li{counter-increment:s;position:relative;padding-left:38px;margin-bottom:12px}
+.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;background:#17324a;color:var(--acc2);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+footer{padding:34px 0 56px;color:var(--mut);font-size:14px}
+footer a{margin-right:14px}
+@media(max-width:700px){body{font-size:16px}.grid2{grid-template-columns:1fr}h1{font-size:30px}.card{padding:17px}.prompt{flex-wrap:wrap}.prompt .t{flex-basis:calc(100% - 34px)}.prompt .btn{margin-left:34px}}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQFRVJ4CT4"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-WQFRVJ4CT4');
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"ChatGPT Mention Checker","applicationCategory":"BusinessApplication","operatingSystem":"Any","url":"https://siro254e.github.io/signalrank/prompt-checker.html","description":"A free 10-prompt generator and scorecard for checking whether ChatGPT, Perplexity and Google AI Overviews mention a brand.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"SignalRank"}}
+</script>
+</head>
+<body>
+
+<nav class="top"><div class="wrap">
+<a href="./">All five tools compared</a>
+<a href="./track-chatgpt-mentions.html">5-method guide</a>
+<a href="./review.html">OmniSEO review</a>
+</div></nav>
+
+<header><div class="wrap">
+<h1>ChatGPT mention checker: build your 10-prompt test</h1>
+<p class="sub">A free prompt generator and scorecard. It does <strong>not</strong> query ChatGPT for you — it gives you the exact buyer questions to run, and one place to record what came back. No signup, no API key, no invented score.</p>
+<p class="disc"><b>Affiliate disclosure:</b> this page contains affiliate links. SignalRank is an <strong>OmniSEO partner</strong> and earns 50% of what a referred customer pays in their first 12 months, at no extra cost to you. The checker is free and works without buying anything.</p>
+</div></header>
+
+<section><div class="wrap">
+<h2>1. Describe the buyer question</h2>
+<form id="form" autocomplete="off">
+  <div class="grid2">
+    <div>
+      <label for="brand">Your brand <span style="color:var(--bad)">*</span></label>
+      <input id="brand" name="brand" placeholder="e.g. SignalRank" required maxlength="60">
+    </div>
+    <div>
+      <label for="category">Category <span style="color:var(--bad)">*</span></label>
+      <input id="category" name="category" placeholder="e.g. AI visibility tool" required maxlength="70">
+    </div>
+  </div>
+  <div class="grid2" style="margin-top:14px">
+    <div>
+      <label for="audience">Buyer or use case</label>
+      <input id="audience" name="audience" placeholder="e.g. agencies with 5 clients" maxlength="70">
+    </div>
+    <div>
+      <label for="competitor">Main competitor</label>
+      <input id="competitor" name="competitor" placeholder="e.g. Promptwatch" maxlength="60">
+    </div>
+  </div>
+  <p class="note" style="margin-top:14px">The prompts use natural buyer wording, not keyword-tool wording. You can edit any prompt after it is generated.</p>
+  <button class="btn" type="submit">Generate my 10 prompts</button>
+  <p class="err" id="err">Add your brand and category first.</p>
+</form>
+</div></section>
+
+<section id="output" class="hidden"><div class="wrap">
+<h2>2. Run these 10 prompts</h2>
+<p>Open each engine in a fresh chat, paste the prompt, and record the answer in the sheet below. Use the same 10 prompts across engines so the comparison is fair.</p>
+<div class="actions" style="margin-bottom:14px">
+  <button class="btn ghost small" type="button" id="copyAll">Copy all 10</button>
+  <button class="btn ghost small" type="button" id="reset">Start over</button>
+</div>
+<div id="prompts"></div>
+
+<h2 style="margin-top:32px">3. Record what came back</h2>
+<div class="summary">
+  <span>Named: <strong id="namedCount">0/10</strong></span>
+  <span>Linked: <strong id="linkedCount">0/10</strong></span>
+  <span>Engine coverage: <strong id="engineCount">0/10</strong></span>
+</div>
+<div class="tablewrap">
+<table>
+<thead><tr><th>#</th><th>Prompt</th><th>Engine</th><th>Named?</th><th>Linked?</th><th>Competitors named</th></tr></thead>
+<tbody id="rows"></tbody>
+</table>
+</div>
+<div class="actions">
+  <button class="btn" type="button" id="export">Export CSV</button>
+  <button class="btn ghost" type="button" id="clearResults">Clear results</button>
+</div>
+<p class="note" style="margin-top:14px">This sheet is stored in your browser only. Nothing is sent to a server. Export the CSV before clearing your browser data.</p>
+
+<h2 style="margin-top:32px">4. Read the split, not a score</h2>
+<div class="statrow">
+  <div class="stat"><div class="n" id="statNamed">0</div><div class="l">prompts where you were named</div></div>
+  <div class="stat"><div class="n" id="statLinked">0</div><div class="l">prompts where your site was linked</div></div>
+  <div class="stat"><div class="n" id="statMissing">10</div><div class="l">unbranded prompts with no mention</div></div>
+</div>
+<p><strong>Named but not linked</strong> means the model knows you and sends the click elsewhere. <strong>Linked but only on branded prompts</strong> means you have brand recognition, not category retrieval. <strong>Absent everywhere</strong> means the content and citation work comes before the dashboard. The <a href="./track-chatgpt-mentions.html">5-method guide</a> explains what to do with each result.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>What this tool does not do</h2>
+<ul>
+<li>It does not call ChatGPT, Perplexity or Google. You run the prompts yourself, logged out where possible.</li>
+<li>It does not produce a “visibility score.” A single number hides the useful split between named, linked and absent.</li>
+<li>It does not replace a paid tracker. If you need recurring runs across many prompts and engines, that is what <a href="./review.html">an AI visibility tool</a> is for; compare the plan limits before paying.</li>
+</ul>
+<div class="card" style="margin-top:18px">
+<h2 style="margin-top:0">Run the free test first</h2>
+<p>If the ten prompts show no mention, a monitoring tool will confirm the absence, not fix it. If they show a gap you need to watch every month, the <a href="./">five-tool comparison</a> covers the plans, caps and trial limits.</p>
+<p style="margin-bottom:0"><a class="btn ghost small" href="./track-chatgpt-mentions.html">Read the 5-method guide &rarr;</a> <a class="btn" href="https://get.omniseo.com/mcomk5teh3xi?utm_source=site&amp;utm_medium=referral&amp;utm_campaign=ai-visibility-2026&amp;utm_content=prompt-checker" rel="nofollow sponsored noopener" target="_blank">Try OmniSEO free for 7 days</a></p>
+<p class="note" style="margin-top:14px">The trial needs no card and covers ChatGPT and Google AI Overviews only. Full terms and limits are on the <a href="./review.html">OmniSEO review page</a>.</p>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+<p><strong>Affiliate disclosure:</strong> this page contains affiliate links. SignalRank is an <strong>OmniSEO partner</strong> and earns 50% of what a referred customer pays in their first 12 months, at no extra cost to you. The free checker is documented first; the paid tool is an optional next step.</p>
+<p><a href="./">Comparison</a><a href="./track-chatgpt-mentions.html">5-method guide</a><a href="./review.html">OmniSEO review</a><a href="./evidence.html">30-answer test</a></p>
+</div></footer>
+
+<script>
+(function () {
+  "use strict";
+  var KEY = "signalrank-prompt-checker-v1";
+  var $ = function (id) { return document.getElementById(id); };
+  var state = { brand: "", category: "", audience: "", competitor: "", prompts: [], results: {} };
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(KEY);
+      if (!raw) return;
+      var saved = JSON.parse(raw);
+      if (!saved || !Array.isArray(saved.prompts)) return;
+      state = saved;
+      $("brand").value = state.brand || "";
+      $("category").value = state.category || "";
+      $("audience").value = state.audience || "";
+      $("competitor").value = state.competitor || "";
+      if (state.prompts.length === 10) {
+        render();
+        $("output").classList.remove("hidden");
+      }
+    } catch (e) { /* ignore corrupt local state */ }
+  }
+
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* private mode */ }
+  }
+
+  function makePrompts(brand, category, audience, competitor) {
+    var a = audience || "a buyer";
+    var x = competitor || "the market leader";
+    return [
+      "What is the best " + category + " for " + a + "?",
+      "Which " + category + " should I use for " + a + "?",
+      "What are the top " + category + " tools in 2026?",
+      brand + " vs " + x + " — which is better for " + a + "?",
+      "Is " + brand + " good for " + a + "?",
+      "What are the best alternatives to " + x + "?",
+      "Recommend a " + category + " for " + a + ".",
+      "What is the best " + category + " for a small team?",
+      "Which " + category + " is best for " + a + "?",
+      "Who are the leaders in " + category + " right now?"
+    ];
+  }
+
+  function render() {
+    var pc = $("prompts");
+    pc.innerHTML = "";
+    state.prompts.forEach(function (p, i) {
+      var row = document.createElement("div");
+      row.className = "prompt";
+      var n = document.createElement("div");
+      n.className = "n";
+      n.textContent = String(i + 1).padStart(2, "0");
+      var t = document.createElement("div");
+      t.className = "t";
+      t.textContent = p;
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "btn copy small";
+      b.textContent = "Copy";
+      b.addEventListener("click", function () { copy(p, b); });
+      row.appendChild(n); row.appendChild(t); row.appendChild(b);
+      pc.appendChild(row);
+    });
+
+    var tb = $("rows");
+    tb.innerHTML = "";
+    state.prompts.forEach(function (p, i) {
+      var r = state.results[i] || { engine: "ChatGPT", named: "", linked: "", competitors: "" };
+      state.results[i] = r;
+      var tr = document.createElement("tr");
+      var td0 = document.createElement("td"); td0.className = "pnum"; td0.textContent = String(i + 1); tr.appendChild(td0);
+      var td1 = document.createElement("td"); td1.className = "ptext"; td1.textContent = p; tr.appendChild(td1);
+      ["engine", "named", "linked", "competitors"].forEach(function (k) {
+        var td = document.createElement("td");
+        var el;
+        if (k === "engine") {
+          el = document.createElement("select");
+          ["ChatGPT", "Perplexity", "Google AI Overviews", "Gemini", "Copilot"].forEach(function (v) {
+            var o = document.createElement("option"); o.value = v; o.textContent = v; el.appendChild(o);
+          });
+          el.value = r.engine || "ChatGPT";
+        } else if (k === "named" || k === "linked") {
+          el = document.createElement("select");
+          [["", "—"], ["yes", "Yes"], ["no", "No"]].forEach(function (v) {
+            var o = document.createElement("option"); o.value = v[0]; o.textContent = v[1]; el.appendChild(o);
+          });
+          el.value = r[k] || "";
+        } else {
+          el = document.createElement("input");
+          el.type = "text";
+          el.placeholder = "e.g. Tool A, Tool B";
+          el.value = r.competitors || "";
+          el.maxLength = 120;
+        }
+        el.setAttribute("data-i", String(i));
+        el.setAttribute("data-k", k);
+        el.addEventListener("change", onField);
+        el.addEventListener("input", onField);
+        td.appendChild(el); tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+    updateSummary();
+  }
+
+  function onField(e) {
+    var el = e.target;
+    var i = el.getAttribute("data-i");
+    var k = el.getAttribute("data-k");
+    if (!state.results[i]) state.results[i] = { engine: "ChatGPT", named: "", linked: "", competitors: "" };
+    state.results[i][k] = el.value;
+    save();
+    updateSummary();
+  }
+
+  function updateSummary() {
+    var named = 0, linked = 0, engines = {};
+    state.prompts.forEach(function (_, i) {
+      var r = state.results[i] || {};
+      if (r.named === "yes") named++;
+      if (r.linked === "yes") linked++;
+      if (r.engine) engines[r.engine] = true;
+    });
+    $("namedCount").textContent = named + "/10";
+    $("linkedCount").textContent = linked + "/10";
+    $("engineCount").textContent = Object.keys(engines).length + "/5";
+    $("statNamed").textContent = String(named);
+    $("statLinked").textContent = String(linked);
+    $("statMissing").textContent = String(10 - named);
+  }
+
+  function copy(text, btn) {
+    var done = function () {
+      if (!btn) return;
+      var old = btn.textContent;
+      btn.textContent = "Copied";
+      setTimeout(function () { btn.textContent = old; }, 1400);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(function () { fallbackCopy(text, done); });
+    } else { fallbackCopy(text, done); }
+  }
+
+  function fallbackCopy(text, done) {
+    var ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); done(); } catch (e) { /* noop */ }
+    document.body.removeChild(ta);
+  }
+
+  function csvCell(s) { return '"' + String(s == null ? "" : s).replace(/"/g, '""') + '"'; }
+
+  $("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var brand = $("brand").value.trim();
+    var category = $("category").value.trim();
+    var audience = $("audience").value.trim();
+    var competitor = $("competitor").value.trim();
+    if (!brand || !category) { $("err").style.display = "block"; return; }
+    $("err").style.display = "none";
+    state = { brand: brand, category: category, audience: audience, competitor: competitor, prompts: [], results: {} };
+    state.prompts = makePrompts(brand, category, audience, competitor);
+    save();
+    render();
+    $("output").classList.remove("hidden");
+    $("output").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  $("copyAll").addEventListener("click", function () {
+    copy(state.prompts.map(function (p, i) { return (i + 1) + ". " + p; }).join("\n"), $("copyAll"));
+  });
+
+  $("reset").addEventListener("click", function () {
+    state = { brand: "", category: "", audience: "", competitor: "", prompts: [], results: {} };
+    localStorage.removeItem(KEY);
+    $("form").reset();
+    $("output").classList.add("hidden");
+    $("prompts").innerHTML = ""; $("rows").innerHTML = "";
+    $("brand").focus();
+  });
+
+  $("clearResults").addEventListener("click", function () {
+    state.results = {};
+    state.prompts.forEach(function (_, i) { state.results[i] = { engine: "ChatGPT", named: "", linked: "", competitors: "" }; });
+    save(); render();
+  });
+
+  $("export").addEventListener("click", function () {
+    var lines = ["Prompt,Engine,Named,Linked,Competitors,Date"];
+    var today = new Date().toISOString().slice(0, 10);
+    state.prompts.forEach(function (p, i) {
+      var r = state.results[i] || {};
+      lines.push([p, r.engine || "", r.named || "", r.linked || "", r.competitors || "", today].map(csvCell).join(","));
+    });
+    var blob = new Blob([lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "signalrank-chatgpt-mentions-" + today + ".csv";
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); document.body.removeChild(a); }, 500);
+  });
+
+  load();
+})();
+</script>
+
+</body>
+</html>
